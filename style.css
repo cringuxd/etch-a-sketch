@@ -46,8 +46,10 @@ html {
     flex-wrap: wrap;
     border: 2px solid black;
     margin-top: 10%;
+    background-color: white;
 }
 
 .square {
     outline: 1px black solid;
+    background-color: white;
 }

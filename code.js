@@ -12,7 +12,10 @@ function createGrid(inputValue, rowList) {
         rowList[i].setAttribute("class","square");
         rowList[i].style.width = squareSize.toString() +"%";
         rowList[i].style.height = squareSize.toString() +"%";
-        console.log (rowList[i].style.width);
+        rowList[i].addEventListener('mouseover',() => {
+            rowList[i].style["background-color"] = "black";
+            console.log("Hovered!");
+        });
         grid.appendChild(rowList[i]);
     }
 }
@@ -28,6 +31,7 @@ function calculateSquareSize(n) {
     return Math.round((1/n)*100);
 }
 
-createGrid(10, rowList);
+
+createGrid(16, rowList);
 
 
