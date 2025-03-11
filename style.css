@@ -8,8 +8,8 @@ html {
     border: 2px solid black;
     border-radius: 16px;
     position: absolute;
-    width: 30%;
-    height: 50%;
+    width: 600px;
+    height: 600px;
     background-color: gray;
     margin-left: 30%;
     margin-top: 10%;
@@ -40,7 +40,14 @@ html {
 }
 
 .grid {
+    height: 70%;
     width: 70%;
     display:flex;
     flex-wrap: wrap;
+    border: 2px solid black;
+    margin-top: 10%;
+}
+
+.square {
+    outline: 1px black solid;
 }
