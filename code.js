@@ -1,23 +1,18 @@
 //Divide the x by x grid by creating x "row" containers, each containing x squares
 
 
-//* Create initial flexbox container (can play around with potential border value)
-const body = document.querySelector("body")
-body.setAttribute("class","container");
-body.appendChild(initialContainer);
-
 //Start with 16 containers as a default (use node list)
-function createGrid() {
+function createGrid(inputValue) {
     let rowList = [];
-    for(let i = 0; i < 16; i++) {
-        //* create row container here (make it a flexbox container)
+    let gridSquares = inputValue * inputValue;
+
+    for(let i = 0; i < gridSquares; i++) {
         rowList[i] = document.createElement("div");
-        for(let j = 0; i < 16; j++) {
-            //* create 16 "squares"
-            
-        }
-        //*
+        rowList[i].setAttribute("class","square");
+        container.appendChild(rowList[i]);
     }
 }
+
+//createGrid(16);
 
 //function deleteGrid() {}

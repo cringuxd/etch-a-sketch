@@ -1,5 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+    background-color: white;
+}
+
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 16px;
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    background-color: gray;
+    margin-left: 30%;
+    margin-top: 10%;
+    font-family: 'Inter', 'sans-serif';
+    display:flex;
+    flex-direction: column;
+}
+
+.header {
+    border-bottom: 2px solid black;
+    flex-shrink: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+.container-2 {
+    display:flex;
+    flex: 1;
+}
+
+.button-pad {
+    width: 30%;
+    border-right: 2px solid black;
+}
+
+.grid {
+    width: 70%;
+    display:flex;
+    flex-wrap: wrap;
 }
