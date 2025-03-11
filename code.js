@@ -1,9 +1,18 @@
 //Divide the x by x grid by creating x "row" containers, each containing x squares
+
 const grid = document.querySelector(".grid")
 let rowList = [];
+const grid_button = document.querySelector(".grid-button");
+let gridSize = 16;
 
+//Button code utilized for changing grid size
+grid_button.onclick = () => {
+    gridSize = prompt("Enter the new size of the grid. Minimum size 10x10, maximum 100x100. (Enter one number)");
+    deleteGrid();
+    createGrid(gridSize,rowList);
+};
 
-//Start with 16 containers as a default (use node list)
+//This function also handles the color changing hover events
 function createGrid(inputValue, rowList) {
     let gridSquares = inputValue * inputValue;
     let squareSize = calculateSquareSize(inputValue);
@@ -31,7 +40,7 @@ function calculateSquareSize(n) {
     return Math.round((1/n)*100);
 }
 
-
+//Initialize starting grid
 createGrid(16, rowList);
 
 

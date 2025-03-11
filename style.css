@@ -37,6 +37,18 @@ html {
 .button-pad {
     width: 30%;
     border-right: 2px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-button {
+    width: 60%;
+    height: 70px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
 }
 
 .grid {
